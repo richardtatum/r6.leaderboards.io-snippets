@@ -90,8 +90,3 @@ class Gif(db.Model):
 
     def __repr__(self):
         return f'<Gif {self.id} for: {self.author}.>'
-
-
-@login.user_loader
-def load_user(id):
-    return User.query.get(int(id))
