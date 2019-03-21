@@ -4,8 +4,8 @@ class RegistrationForm(FlaskForm):
     region = SelectField('Region', choices=regions, validators=[DataRequired()])
     platform = SelectField('Platform', choices=platforms, validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
-    password2 = PasswordField(
-        'Repeat Password', validators=[DataRequired(), EqualTo('password', message='The new password fields do not match, please try again.')])
+    password2 = PasswordField('Repeat Password', validators=[DataRequired(),
+                               EqualTo('password', message='The new password fields do not match, please try again.')])
     recaptcha = RecaptchaField()
     submit = SubmitField('Register')
 
