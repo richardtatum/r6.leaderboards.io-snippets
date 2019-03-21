@@ -43,8 +43,8 @@ class ClanRegistrationForm(FlaskForm):
 class AccountDeleteForm(FlaskForm):
     r6_user = StringField('Username', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
-    password2 = PasswordField(
-        'Repeat Password', validators=[DataRequired(), EqualTo('password', message="The password fields do not match, please try again.")])
+    password2 = PasswordField('Repeat Password', validators=[DataRequired(),
+                               EqualTo('password', message="The password fields do not match, please try again.")])
     submit = SubmitField('DELETE MY ACCOUNT')
 
     def __init__(self, original_r6_user, *args, **kwargs):
