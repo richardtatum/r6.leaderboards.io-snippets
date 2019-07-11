@@ -5,6 +5,9 @@ A selection of code from the private repo r6_leaderboard, to demostrate practice
 ### Homepage
 ![](https://i.imgur.com/Wqgh0ne.jpg)
 
+### Registration
+![](https://i.imgur.com/oB5GYN5.jpg)
+
 ### Logged In
 ![](https://i.imgur.com/ABTYw27.png)
 
